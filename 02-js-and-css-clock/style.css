@@ -17,9 +17,9 @@ body {
 #container,
 #clock:before,
 .clock-marks,
-#clock #hours,
-#clock #minutes,
-#clock #seconds,
+#hours,
+#minutes,
+#seconds,
 #clock:after,
 #levels-panel,
 #phone-container {
@@ -71,31 +71,31 @@ body {
     width: 6%;
 }
 
-#clock #hours,
-#clock #minutes,
-#clock #seconds {
+#hours,
+#minutes,
+#seconds {
     background: #45AAD6;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     box-shadow: 0 0 8px 0 rgba(66, 155, 213, 0.6);
     top: 50%;
     transform-origin: top center;
-    transform: rotate(0);
+    transform: rotate(180deg);
 }
 
-#clock #hours {
+#hours {
     height: 14%;
     left: calc(50% - 2%);
     width: 4%;
 }
 
-#clock #minutes {
+#minutes {
     height: 18%;
     left: calc(50% - 2%);
     width: 4%;
 }
 
-#clock #seconds {
+#seconds {
     height: 20%;
     left: calc(50% - 1%);
     width: 2%;
