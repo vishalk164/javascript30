@@ -1,0 +1,49 @@
+body {
+    background-color: #F7F7FA;
+    color: #1b4142;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+    opacity: .8;
+}
+
+hr {
+    border: 1px solid #ececec;
+    margin: 20px 0 40px;
+}
+
+pre {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ececec;
+    line-height: 1.6em;
+    margin-bottom: 60px;
+    padding: 16px;
+    width: calc(100% - 32px);
+
+    /* wrap text */
+    white-space: pre-wrap;
+    /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+}
+
+
+@media(min-width: 780px) {
+    body {
+        padding: 40px;
+    }
+}
