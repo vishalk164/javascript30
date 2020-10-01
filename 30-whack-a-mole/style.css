@@ -69,3 +69,22 @@ h1 {
 .hole.up .mole {
   top: 0;
 }
+
+button {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  display: block;
+  font-family: 'Amatic SC', cursive;
+  font-size: 48px;
+  margin: 120px auto;
+  padding: 8px 40px;
+  transition: .4s;
+  outline: none;
+}
+
+button:hover {
+  border-color: #593D09;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
