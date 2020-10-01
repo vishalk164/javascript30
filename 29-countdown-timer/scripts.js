@@ -21,9 +21,16 @@ function timer(seconds) {
 };
 
 function displayTimeLeft(seconds) {
-  const minutes = Math.floor(seconds / 60);
+  let minutes = Math.floor(seconds / 60);
   const remainderSeconds = seconds % 60;
-  const display = `${("0" + minutes).slice(-2)}:${("0" + remainderSeconds).slice(-2)}`;
+  let hour;
+  if (minutes >= 60) {
+    hour = ('0' + Math.floor(minutes / 60)).slice(-2) + ':';
+    minutes = minutes % 60;
+  } else {
+    hour = false;
+  }
+  const display = `${hour ? hour : ''}${('0' + minutes).slice(-2)}:${('0' + remainderSeconds).slice(-2)}`;
   document.title = display;
   timerDisplay.textContent = display;
 }
@@ -32,7 +39,7 @@ function displayEndTime(timestamp) {
   const end = new Date(timestamp);
   const hour = end.getHours();
   const minutes = end.getMinutes();
-  endTime.textContent = `Be back at ${("0" + (hour > 12 ? hour - 12 : hour)).slice(-2)}:${("0" + minutes).slice(-2)}`;
+  endTime.textContent = `Be back at ${('0' + (hour > 12 ? hour - 12 : hour)).slice(-2)}:${('0' + minutes).slice(-2)}`;
 };
 
 function startTime() {
